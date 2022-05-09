@@ -1,5 +1,16 @@
 #nav-text {
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
 }
-
+#steam-color{
+    color: rgb(209, 161, 3);
+}
+#xbox-color{
+    color: rgb(209, 161, 3);
+}
+#hover-link:hover{
+    color:rgb(209, 161, 3);
+}
+#hover-link{
+    color: white;
+}
