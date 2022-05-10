@@ -36,3 +36,11 @@ body, html{
     color: white;
     font-size: 1.5rem;
 }
+#text-story{
+    font-family: 'Bebas Neue',;
+    color: white;
+    font-size: 1rem;
+}
+#pt-story{
+    padding-top: 8%;
+}
