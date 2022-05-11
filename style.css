@@ -5,6 +5,9 @@ body, html{
     font-family: 'Open Sans',;
     font-size: 14px;
 }
+#dropdown-hover:hover {
+background-color: rgb(209, 161, 3);
+}
 #steam-color{
     color: rgb(209, 161, 3);
 }
@@ -28,7 +31,7 @@ body, html{
     font-family: 'Bebas Neue',;
     color: white;
     font-size: 4rem;
-    letter-spacing: -0.3rem;
+    letter-spacing: -0.1rem;
     padding-top: 9%;
 }
 #Info-Text{
