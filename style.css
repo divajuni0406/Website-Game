@@ -72,6 +72,9 @@ body, html {
     color: white;
     font-size: 1rem;
 }
+#text-story:hover{
+    color: rgb(209, 161, 3);
+}
 
 #pt-story {
     padding-top: 8%;
