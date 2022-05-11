@@ -22,121 +22,134 @@
 
 <body>
     <!-- Main Menu -->
-    <header id="home">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-75 py-0">
+    <section id="home">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-75 py-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand px-4" href="#">
+                        <img src="assets/logo.png" class="img-fluid" id="img-size" alt="Binar-Academy-Challenge"
+                            width="49" height="49">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="navbarNav">
+                        <ul class="navbar-nav" id="nav-text">
+                            <li class="nav-item">
+                                <a class="nav-link ms-4 fw-bold" id="hover-link" aria-current="page"
+                                    href="#home">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ms-4 fw-bold" id="hover-link" href="#">WORK</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ms-4 fw-bold" id="hover-link" href="#">CONTACT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ms-4 fw-bold" id="hover-link" href="#">ABOUT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse ms-4 text-center" id="navbarNav">
+                        <ul class="navbar-nav ms-auto" id="nav-text">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle fw-bold" id="hover-link" href="#"
+                                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    SIGN UP
+                                </a>
+                                <ul class="dropdown-menu mx-auto w-25 text-center" id="nav-text">
+                                    <li><a class="dropdown-item" id="dropdown-hover" href="#">SIGN UP</a></li>
+                                    <li><a class="dropdown-item" id="dropdown-hover" href="#">LOGIN</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <span class="d-none d-lg-block d-xl-block bold nav-link"
+                                    style="color:aliceblue">|</span>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-steam" id="steam-color"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006 8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.198 2.198 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046 0 0 1 3.042-3.043 3.046 3.046 0 0 1 3.042 3.043 3.047 3.047 0 0 1-3.111 3.044l-2.804 2a2.223 2.223 0 0 1-3.075 2.11 2.217 2.217 0 0 1-1.312-1.568L.33 10.333Z" />
+                                            <path
+                                                d="M4.868 12.683a1.715 1.715 0 0 0 1.318-3.165 1.705 1.705 0 0 0-1.263-.02l1.023.424a1.261 1.261 0 1 1-.97 2.33l-.99-.41a1.7 1.7 0 0 0 .882.84Zm3.726-6.687a2.03 2.03 0 0 0 2.027 2.029 2.03 2.03 0 0 0 2.027-2.029 2.03 2.03 0 0 0-2.027-2.027 2.03 2.03 0 0 0-2.027 2.027Zm2.03-1.527a1.524 1.524 0 1 1-.002 3.048 1.524 1.524 0 0 1 .002-3.048Z" />
+                                        </svg></span>
+                                    <span class="d-lg-none ms-2">Steam</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-xbox" id="xbox-color" viewBox="0 0 16 16">
+                                            <path
+                                                d="M7.202 15.967a7.987 7.987 0 0 1-3.552-1.26c-.898-.585-1.101-.826-1.101-1.306 0-.965 1.062-2.656 2.879-4.583C6.459 7.723 7.897 6.44 8.052 6.475c.302.068 2.718 2.423 3.622 3.531 1.43 1.753 2.088 3.189 1.754 3.829-.254.486-1.83 1.437-2.987 1.802-.954.301-2.207.429-3.239.33Zm-5.866-3.57C.589 11.253.212 10.127.03 8.497c-.06-.539-.038-.846.137-1.95.218-1.377 1.002-2.97 1.945-3.95.401-.417.437-.427.926-.263.595.2 1.23.638 2.213 1.528l.574.519-.313.385C4.056 6.553 2.52 9.086 1.94 10.653c-.315.852-.442 1.707-.306 2.063.091.24.007.15-.3-.319Zm13.101.195c.074-.36-.019-1.02-.238-1.687-.473-1.443-2.055-4.128-3.508-5.953l-.457-.575.494-.454c.646-.593 1.095-.948 1.58-1.25.381-.237.927-.448 1.161-.448.145 0 .654.528 1.065 1.104a8.372 8.372 0 0 1 1.343 3.102c.153.728.166 2.286.024 3.012a9.495 9.495 0 0 1-.6 1.893c-.179.393-.624 1.156-.82 1.404-.1.128-.1.127-.043-.148ZM7.335 1.952c-.67-.34-1.704-.705-2.276-.803a4.171 4.171 0 0 0-.759-.043c-.471.024-.45 0 .306-.358A7.778 7.778 0 0 1 6.47.128c.8-.169 2.306-.17 3.094-.005.85.18 1.853.552 2.418.9l.168.103-.385-.02c-.766-.038-1.88.27-3.078.853-.361.176-.676.316-.699.312a12.246 12.246 0 0 1-.654-.319Z" />
+                                        </svg></span>
+                                    <span class="d-lg-none ms-2">Xbox</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Main Menu End Tag -->
+            <!-- Main Call To Action -->
             <div class="container-fluid">
-                <a class="navbar-brand px-4" href="#">
-                    <img src="assets/logo.png" class="img-fluid" id="img-size" alt="Binar-Academy-Challenge" width="49"
-                        height="49">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse text-center" id="navbarNav">
-                    <ul class="navbar-nav" id="nav-text">
-                        <li class="nav-item">
-                            <a class="nav-link ms-4 fw-bold" id="hover-link" aria-current="page" href="#home">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ms-4 fw-bold" id="hover-link" href="#">WORK</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ms-4 fw-bold" id="hover-link" href="#">CONTACT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ms-4 fw-bold" id="hover-link" href="#">ABOUT US</a>
-                        </li>
-                    </ul>
+                <h1 class="text-center fw-bold" id="Main-Text">PLAY TRADITIONAL GAME</b></h1>
+                <h2 class="text-center pt-5 fw-bold" id="Info-Text">EXPERIENCE NEW TRADITION GAMEPLAY</b></h2>
+                <div class="text-center pt-5">
+                    <a class="btn btn-warning btn-lg" href="#" role="button" id="button-play">PlAY NOW ||
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-controller" viewBox="0 0 16 16">
+                            <path
+                                d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z" />
+                            <path
+                                d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z" />
+                        </svg></a>
                 </div>
-                <div class="collapse navbar-collapse ms-4 text-center" id="navbarNav">
-                    <ul class="navbar-nav ms-auto" id="nav-text">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fw-bold" id="hover-link" href="#" id="navbarDropdownMenuLink"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                SIGN UP
-                            </a>
-                            <ul class="dropdown-menu mx-auto w-25 text-center" id="nav-text">
-                                <li><a class="dropdown-item" id="dropdown-hover" href="#">SIGN UP</a></li>
-                                <li><a class="dropdown-item" id="dropdown-hover" href="#">LOGIN</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <span class="d-none d-lg-block d-xl-block bold nav-link" style="color:aliceblue">|</span>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-steam" id="steam-color" viewBox="0 0 16 16">
-                                        <path
-                                            d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006 8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.198 2.198 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046 0 0 1 3.042-3.043 3.046 3.046 0 0 1 3.042 3.043 3.047 3.047 0 0 1-3.111 3.044l-2.804 2a2.223 2.223 0 0 1-3.075 2.11 2.217 2.217 0 0 1-1.312-1.568L.33 10.333Z" />
-                                        <path
-                                            d="M4.868 12.683a1.715 1.715 0 0 0 1.318-3.165 1.705 1.705 0 0 0-1.263-.02l1.023.424a1.261 1.261 0 1 1-.97 2.33l-.99-.41a1.7 1.7 0 0 0 .882.84Zm3.726-6.687a2.03 2.03 0 0 0 2.027 2.029 2.03 2.03 0 0 0 2.027-2.029 2.03 2.03 0 0 0-2.027-2.027 2.03 2.03 0 0 0-2.027 2.027Zm2.03-1.527a1.524 1.524 0 1 1-.002 3.048 1.524 1.524 0 0 1 .002-3.048Z" />
-                                    </svg></span>
-                                <span class="d-lg-none ms-2">Steam</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-xbox" id="xbox-color" viewBox="0 0 16 16">
-                                        <path
-                                            d="M7.202 15.967a7.987 7.987 0 0 1-3.552-1.26c-.898-.585-1.101-.826-1.101-1.306 0-.965 1.062-2.656 2.879-4.583C6.459 7.723 7.897 6.44 8.052 6.475c.302.068 2.718 2.423 3.622 3.531 1.43 1.753 2.088 3.189 1.754 3.829-.254.486-1.83 1.437-2.987 1.802-.954.301-2.207.429-3.239.33Zm-5.866-3.57C.589 11.253.212 10.127.03 8.497c-.06-.539-.038-.846.137-1.95.218-1.377 1.002-2.97 1.945-3.95.401-.417.437-.427.926-.263.595.2 1.23.638 2.213 1.528l.574.519-.313.385C4.056 6.553 2.52 9.086 1.94 10.653c-.315.852-.442 1.707-.306 2.063.091.24.007.15-.3-.319Zm13.101.195c.074-.36-.019-1.02-.238-1.687-.473-1.443-2.055-4.128-3.508-5.953l-.457-.575.494-.454c.646-.593 1.095-.948 1.58-1.25.381-.237.927-.448 1.161-.448.145 0 .654.528 1.065 1.104a8.372 8.372 0 0 1 1.343 3.102c.153.728.166 2.286.024 3.012a9.495 9.495 0 0 1-.6 1.893c-.179.393-.624 1.156-.82 1.404-.1.128-.1.127-.043-.148ZM7.335 1.952c-.67-.34-1.704-.705-2.276-.803a4.171 4.171 0 0 0-.759-.043c-.471.024-.45 0 .306-.358A7.778 7.778 0 0 1 6.47.128c.8-.169 2.306-.17 3.094-.005.85.18 1.853.552 2.418.9l.168.103-.385-.02c-.766-.038-1.88.27-3.078.853-.361.176-.676.316-.699.312a12.246 12.246 0 0 1-.654-.319Z" />
-                                    </svg></span>
-                                <span class="d-lg-none ms-2">Xbox</span>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="text-center fw-bold" id="pt-story">
+                    <a href="#" class="text-decoration-none" id="text-story">THE STORY <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
-        </nav>
-        <!-- Main Menu End Tag -->
-        <!-- Main Call To Action -->
-        <div class="container-fluid">
-            <h1 class="text-center fw-bold" id="Main-Text">PLAY TRADITIONAL GAME</b></h1>
-            <h2 class="text-center pt-5 fw-bold" id="Info-Text">EXPERIENCE NEW TRADITION GAMEPLAY</b></h2>
-            <div class="text-center pt-5">
-                <a class="btn btn-warning btn-lg" href="#" role="button" id="button-play">PlAY NOW ||
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                        class="bi bi-controller" viewBox="0 0 16 16">
-                        <path
-                            d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z" />
-                        <path
-                            d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z" />
-                    </svg></a>
-            </div>
-            <div class="text-center fw-bold" id="pt-story">
-                <a href="#" class="text-decoration-none" id="text-story">THE STORY <br>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z" />
-                    </svg>
-                </a>
+        </header>
+    </section>
+    <!-- Main Call To Action End Tag -->
+    <!-- Gameplay Options -->
+    <section id="Gameplay-Option">
+        <div id="container-fluid">
+            <div class="d-flex flex-column border border-4 border-danger">
+                <h1 class="fw-bold border border-info text-light p-2">What's So Special ?</h1>
+                <h1 class="fw-bold border border-info text-light p-2">THE GAMES</h1>
             </div>
         </div>
-    </header>
+    </section>
+    <!-- Gameplay Options END TAG -->
+    <!-- Game Feature -->
+
+    <!-- Game Feature End Tag -->
+    <!-- System Requirement -->
+
+    <!-- System Requirement End Tag -->
+    <!-- Top Score -->
+
+    <!-- Top Score End Tag -->
+    <!-- Top Score -->
+
+    <!-- Top Score End Tag-->
+    <!-- Footer -->
+
+    <!-- Footer End Tag-->
+
 </body>
-<!-- Main Call To Action End Tag -->
-<!-- Gameplay Options -->
-
-<!-- Gameplay Options END TAG -->
-<!-- Game Feature -->
-
-<!-- Game Feature End Tag -->
-<!-- System Requirement -->
-
-<!-- System Requirement End Tag -->
-<!-- Top Score -->
-
-<!-- Top Score End Tag -->
-<!-- Top Score -->
-
-<!-- Top Score End Tag-->
-<!-- Footer -->
-
-<!-- Footer End Tag-->
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
 </script>
