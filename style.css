@@ -2,8 +2,9 @@ body, html {
     height: 100%;
 }
 
+/* Main Menu */
 #nav-text {
-    font-family: 'Open Sans', ;
+    font-family: 'Open Sans';
     font-size: 14px;
 }
 
@@ -36,43 +37,54 @@ body, html {
     box-shadow: inset 0 0 100px 20px black;
 }
 
+/* Main Menu End Style */
+
+/* Main Call To Action */
 #Main-Text {
-    font-family: 'Bebas Neue', ;
+    font-family: 'Bebas Neue';
     color: white;
-    font-size: 4rem;
-    letter-spacing: -0.1rem;
+    font-size: 5rem;
+    letter-spacing: 0.3rem;
     padding-top: 9%;
 }
 
 @media (max-width: 991px) {
     #Main-Text {
-        font-family: 'Bebas Neue', ;
+        font-family: 'Bebas Neue';
         color: white;
-        font-size: 3rem;
-        letter-spacing: -0.1rem;
+        font-size: 3.3rem;
+        letter-spacing: 0rem;
         padding-top: 9%;
     }
 }
 
 #Info-Text {
-    font-family: 'Bebas Neue', ;
+    font-family: 'Bebas Neue';
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 @media (max-width: 991px) {
-#Info-Text {
-    font-family: 'Bebas Neue', ;
-    color: white;
-    font-size: 1rem;
+    #Info-Text {
+        font-family: 'Bebas Neue';
+        color: white;
+        font-size: 1.4rem;
+        letter-spacing: 0;
+    }
 }
+
+#button-play {
+    font-family: 'Open Sans';
+    color: black;
 }
+
 #text-story {
-    font-family: 'Bebas Neue', ;
+    font-family: 'Open Sans';
     color: white;
     font-size: 1rem;
 }
-#text-story:hover{
+
+#text-story:hover {
     color: rgb(209, 161, 3);
 }
 
@@ -80,6 +92,15 @@ body, html {
     padding-top: 8%;
 }
 
+@media (max-width: 991px) {
+    #pt-story {
+        padding-top: 50%;
+    }
+}
+
+/* Main Call To Action End Style */
+
+/* Gameplay Options */
 #Gameplay-Option {
     background-image: url(assets/the-games-bg.jpg);
     background-repeat: no-repeat;
@@ -91,4 +112,71 @@ body, html {
 
 #Text-Game-Option {
     font-family: 'Open Sans';
+    font-size: 2rem;
 }
+
+#Text-Game-Option-1 {
+    font-family: 'Open Sans';
+    font-size: 4rem;
+}
+
+@media (max-width: 991px) {
+    #Text-Game-Option {
+        font-family: 'Open Sans';
+        font-size: 1.5rem;
+        padding-top: 10%;
+    }
+
+    #Text-Game-Option-1 {
+        font-family: 'Open Sans';
+        font-size: 3.4rem;
+    }
+}
+
+@media (max-width: 991px) {
+    #carousel-game-option {
+        padding-top: 30%;
+    }
+}
+
+/* Gameplay Options END Style */
+
+/* Game Feature */
+#Game-Feature {
+    background-image: url(assets/features.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    box-shadow: inset 0 0 100px 20px black;
+}
+
+@media (max-width: 991px) {
+    #Game-Feature {
+        background-image: url(assets/features.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 70vh;
+        box-shadow: inset 0 0 100px 20px black;
+    }
+}
+
+#collumn-game-feature {
+    padding-top: 10%;
+    padding-right: 20%;
+}
+
+/* Game Feature End Stle  */
+
+/* System Requirement */
+
+/* System Requirement End Style  */
+
+/* Top Score  */
+
+/* Top Score End Style  */
+
+/* Footer  */
+
+/* Footer End Style  */
