@@ -301,7 +301,7 @@ body, html {
         background-size: cover;
         background-position: 65% 50%;
         min-height: 100vh;
-        box-shadow: inset 250px 10px 200px 10px black;
+        box-shadow: inset 250px 10px 100px 10px black;
     }
 
     #TextTittleRequirement {
