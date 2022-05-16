@@ -60,8 +60,11 @@ body, html {
     color: black;
 }
 
+#button-play:hover {
+    animation-play-state: paused;
+}
+
 #button-play {
-    animation-name: hover;
     animation: hover 3s infinite;
 }
 
@@ -78,8 +81,12 @@ body, html {
         background-color: aqua;
     }
 
-    100% {
+    75% {
         background-color: green;
+    }
+
+    100% {
+        background-color: rgb(209, 161, 3);
     }
 }
 
@@ -587,6 +594,52 @@ body, html {
     color: rgb(209, 161, 3);
 }
 
+@media (max-width: 991px) {
+    #text-newsletter h1 {
+        font-size: 2rem;
+    }
+
+    #text-newsletter h3 {
+        font-size: 1.5rem;
+    }
+
+    #text-newsletter p {
+        font-size: 1rem;
+    }
+
+    #logo-color .col-md-1 {
+        width: 12%;
+        padding-right: 50px;
+    }
+
+    #form-email .email {
+        font-size: 1.2rem;
+    }
+
+    #form-email input {
+        font-size: 1.2rem;
+    }
+
+    #form-email p {
+        font-size: 1.1rem;
+    }
+
+
+    #text-footer p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    #text-footer a {
+        font-size: 0.7rem;
+        margin-left: 10px;
+    }
+
+    #text-footer {
+        padding-bottom: 12px;
+    }
+}
+
 /* Footer End Style  */
 /* fixed buttom button  */
 .back-button {
@@ -608,4 +661,23 @@ body, html {
 .my-button:hover {
     color: rgb(209, 161, 3);
 }
+
+.back-button {
+    animation: hover1 2s infinite;
+}
+
+@keyframes hover1 {
+    0% {
+        color: darkkhaki;
+    }
+
+    50% {
+        color: grey;
+    }
+
+    100% {
+        color: darkkhaki
+    }
+}
+
 /* fixed buttom button end tag  */
