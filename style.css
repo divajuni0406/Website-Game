@@ -335,7 +335,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 106vh;
+    min-height: 100vh;
     box-shadow: inset 0 0 100px 20px black;
 }
 
@@ -353,8 +353,259 @@ body, html {
     font-weight: bold;
 }
 
+#header-text-img h2 {
+    color: white;
+    font-family: 'Open-Sans';
+}
+
+#header-text-img svg {
+    color: blue;
+}
+
+#body-text h3 {
+    color: rgb(209, 161, 3);
+    font-family: 'Open-Sans';
+    font-weight: bold;
+}
+
+#body-text p {
+    color: gray;
+    font-family: 'Open-Sans';
+    font-size: 1.2rem;
+}
+
+#header-text-img2 h2 {
+    color: white;
+    font-family: 'Open-Sans';
+}
+
+#header-text-img2 svg {
+    color: blue;
+}
+
+#body-text2 h3 {
+    color: rgb(209, 161, 3);
+    font-family: 'Open-Sans';
+    font-weight: bold;
+}
+
+#body-text2 p {
+    color: gray;
+    font-family: 'Open-Sans';
+    font-size: 1.2rem;
+}
+
+#header-text-img3 h2 {
+    color: white;
+    font-family: 'Open-Sans';
+}
+
+#header-text-img3 svg {
+    color: blue;
+}
+
+#body-text3 h3 {
+    color: rgb(209, 161, 3);
+    font-family: 'Open-Sans';
+    font-weight: bold;
+}
+
+#body-text3 p {
+    color: gray;
+    font-family: 'Open-Sans';
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 991px) {
+
+    #TextTopScore h1 {
+        font-size: 1.5rem;
+    }
+
+    #TextTopScore p {
+        font-size: 1.3rem;
+    }
+
+    #TextTopScore button {
+        width: 30%;
+        margin-bottom: 15px;
+    }
+
+    /* CARD 1 */
+    #header-text-img svg {
+        width: 20%;
+
+    }
+
+    #header-text-img img {
+        width: 30%;
+    }
+
+    #header-text-img h2 {
+        font-size: 1.3rem;
+        width: 50%;
+    }
+
+    #body-text h3 {
+        font-size: 1.1rem;
+    }
+
+    #body-text p {
+        font-size: 1rem;
+    }
+
+    /* CARD 2 */
+    #header-text-img2 svg {
+        width: 20%;
+
+    }
+
+    #header-text-img2 img {
+        width: 30%;
+    }
+
+    #header-text-img2 h2 {
+        width: 50%;
+        font-size: 1.3rem;
+    }
+
+    #body-text2 h3 {
+        font-size: 1.1rem;
+    }
+
+    #body-text2 p {
+        font-size: 1rem;
+    }
+
+    /* CARD 3 */
+    #header-text-img3 svg {
+        width: 20%;
+
+    }
+
+    #header-text-img3 img {
+        width: 30%;
+    }
+
+    #header-text-img3 h2 {
+        width: 50%;
+        font-size: 1.3rem;
+    }
+
+    #body-text3 h3 {
+        font-size: 1.1rem;
+    }
+
+    #body-text3 p {
+        font-size: 1rem;
+    }
+}
+
 /* Top Score End Style  */
 
 /* Footer  */
+#Footer {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+#text-newsletter h1 {
+    font-family: 'Open-Sans';
+    color: white;
+    font-size: 3rem;
+}
+
+#text-newsletter h3 {
+    font-family: 'Open-Sans';
+    color: white;
+    font-size: 2.5rem;
+}
+
+#text-newsletter p {
+    font-family: 'Open-Sans';
+    color: white;
+    font-size: 1.5rem;
+}
+
+#form-email .email {
+    font-family: 'Open-Sans';
+    color: white;
+    font-size: 1.3rem;
+}
+
+#form-email input {
+    font-family: 'Open-Sans';
+    color: white;
+    font-size: 1.3rem;
+}
+
+#form-email .btn-text {
+    font-family: 'Open-Sans';
+    color: black;
+}
+
+#form-email p {
+    font-family: 'Open-Sans';
+    color: white;
+    font-size: 1.3rem;
+}
+
+#logo-color .fb {
+    color: white;
+}
+
+#logo-color .twitter {
+    color: white;
+}
+
+#logo-color .yt {
+    color: red;
+}
+
+#logo-color .ig {
+    color: white;
+}
+
+#text-footer p {
+    font-family: 'Open-Sans';
+}
+
+#text-footer a:link {
+    text-decoration: none;
+}
+
+#text-footer a {
+    color: white;
+    font-family: 'Open Sans';
+}
+
+#text-footer a:hover {
+    color: rgb(209, 161, 3);
+}
 
 /* Footer End Style  */
+/* fixed buttom button  */
+.back-button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    color: darkkhaki;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.my-button {
+    margin-top: 0px;
+}
+
+.my-button:hover {
+    color: rgb(209, 161, 3);
+}
+/* fixed buttom button end tag  */
