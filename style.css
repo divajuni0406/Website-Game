@@ -58,6 +58,7 @@ body, html {
 #button-play {
     font-family: 'Open Sans';
     color: black;
+    font-weight: 500;
 }
 
 #button-play:hover {
@@ -90,7 +91,7 @@ body, html {
     }
 }
 
-#text-story {
+#text-story1 {
     font-family: 'Open Sans';
     color: white;
     font-size: 1rem;
@@ -123,19 +124,26 @@ body, html {
     }
 }
 
+@media (min-width: 576px) and (max-width: 767px) {
+
+    #main-text {
+        font-size: 3.5rem;
+    }
+
+    #pt-story {
+        padding-top: 20%;
+    }
+}
+
 /* FOR MOBILE (CASE IPHONE 11) */
 @media (max-width: 575px) {
     #main-text {
-        font-family: 'Bebas Neue';
-        color: white;
         font-size: 3.3rem;
         letter-spacing: 0rem;
         padding-top: 9%;
     }
 
     #info-text {
-        font-family: 'Bebas Neue';
-        color: white;
         font-size: 1.4rem;
         letter-spacing: 0;
     }
@@ -170,21 +178,18 @@ body, html {
 /* FOR MOBILE (CASE IPHONE 11) */
 @media (max-width: 565px) {
     #text-game-option {
-        font-family: 'Open Sans';
         font-size: 1.5rem;
         padding-top: 10%;
         text-align: left;
     }
 
     #text-game-option-1 {
-        font-family: 'Open Sans';
         font-size: 3.2rem;
         text-align: left;
     }
 
     #carousel-game-option {
         padding-top: 30%;
-
         padding-right: 4%;
         padding-left: 6%;
     }
@@ -202,15 +207,6 @@ body, html {
     box-shadow: inset 0 0 100px 20px black;
 }
 
-/* #collumn-feature {
-    padding-top: 10%;
-    padding-right: 20%;
-}
-
-#collumn-feature0 {
-    padding-right: 20%;
-} */
-
 #text-size-feature {
     font-size: 2.2rem;
     color: white;
@@ -223,16 +219,63 @@ body, html {
     font-family: 'Open Sans';
 }
 
-
-/* #collumn-feature1 {
-    padding-top: 1.5%;
-    padding-right: 15%;
+#text-title-feature p {
+    color: white;
     font-family: 'Open Sans';
-} */
+}
 
 #text-title-feature h2 {
     color: rgb(209, 161, 3);
     font-family: 'Open Sans';
+}
+
+#text-title-feature {
+    color: rgb(209, 161, 3);
+    font-family: 'Open Sans';
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    #text-size-feature {
+        font-size: 1.4rem;
+    }
+
+    #text-size-feature1 {
+        font-size: 3rem;
+    }
+
+    #text-title-feature p {
+        font-size: 0.8rem;
+    }
+
+    #text-title-feature h2 {
+        font-size: 1.2rem;
+    }
+
+    #text-title-feature {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    #text-size-feature {
+        font-size: 1.8rem;
+    }
+
+    #text-size-feature1 {
+        font-size: 3.5rem;
+    }
+
+    #text-title-feature p {
+        font-size: 1rem;
+    }
+
+    #text-title-feature h2 {
+        font-size: 1.2rem;
+    }
+
+    #text-title-feature {
+        font-size: 1.2rem;
+    }
 }
 
 /* FOR MOBILE (CASE IPHONE 11) */
@@ -258,19 +301,14 @@ body, html {
 
     #text-size-feature {
         font-size: 1.2rem;
-        color: white;
-        font-family: 'Open Sans';
     }
 
     #text-size-feature1 {
         font-size: 3rem;
-        color: white;
-        font-family: 'Open Sans';
     }
 
     #collumn-feature1 {
         text-align: left;
-        font-family: 'Open Sans';
         padding-right: 30%;
         font-size: 0.9rem;
         padding-top: 5%;
@@ -278,7 +316,6 @@ body, html {
     }
 
     #text-title-feature h2 {
-        color: rgb(209, 161, 3);
         font-family: 'Open Sans';
     }
 }
@@ -330,24 +367,10 @@ body, html {
 
     #TextTittleRequirement {
         font-size: 1rem;
-        font-family: 'Open Sans';
-        color: white;
-        font-weight: bold;
     }
 
     #TextRequirement {
-        font-family: 'Open Sans';
-        color: white;
         font-size: 2rem;
-        font-weight: bold;
-    }
-
-    #TableText h1 {
-        color: rgb(209, 161, 3);
-    }
-
-    #TableText p {
-        color: white;
     }
 }
 
@@ -378,8 +401,14 @@ body, html {
 }
 
 #header-text-img h2 {
-    color: white;
-    font-family: 'Open-Sans';
+    color: rgb(209, 161, 3);
+    font-family: 'Open Sans';
+}
+
+#header-text-img p {
+    color: lightslategray;
+    font-family: 'Open Sans';
+    font-size: 1.2rem;
 }
 
 #header-text-img svg {
@@ -387,20 +416,27 @@ body, html {
 }
 
 #body-text h3 {
-    color: rgb(209, 161, 3);
-    font-family: 'Open-Sans';
-    font-weight: bold;
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 1.3rem;
 }
 
 #body-text p {
     color: gray;
-    font-family: 'Open-Sans';
-    font-size: 1.2rem;
+    font-family: 'Open Sans';
+    font-size: 1rem;
 }
 
 #header-text-img2 h2 {
-    color: white;
-    font-family: 'Open-Sans';
+    font-family: 'Open Sans';
+    font-size: 1.7rem;
+    color: rgb(209, 161, 3);
+}
+
+#header-text-img2 p {
+    font-family: 'Open Sans';
+    color: lightslategray;
+    font-size: 1.2rem;
 }
 
 #header-text-img2 svg {
@@ -408,21 +444,27 @@ body, html {
 }
 
 #body-text2 h3 {
-    color: rgb(209, 161, 3);
-    font-family: 'Open-Sans';
-    font-weight: bold;
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 1.3rem;
 }
 
 #body-text2 p {
     color: gray;
-    font-family: 'Open-Sans';
-    font-size: 1.2rem;
+    font-family: 'Open Sans';
+    font-size: 1rem;
 }
 
 #header-text-img3 h2 {
-    color: white;
-    font-family: 'Open-Sans';
-    font-size: 1.9rem;
+    font-family: 'Open Sans';
+    font-size: 1.7rem;
+    color: rgb(209, 161, 3);
+}
+
+#header-text-img3 p {
+    font-family: 'Open Sans';
+    color: lightslategray;
+    font-size: 1.2rem;
 }
 
 #header-text-img3 svg {
@@ -430,15 +472,34 @@ body, html {
 }
 
 #body-text3 h3 {
-    color: rgb(209, 161, 3);
-    font-family: 'Open-Sans';
-    font-weight: bold;
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 1.3rem;
 }
 
 #body-text3 p {
     color: gray;
-    font-family: 'Open-Sans';
-    font-size: 1.2rem;
+    font-family: 'Open Sans';
+    font-size: 1rem;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    #TextTopScore h1 {
+        font-size: 3rem;
+    }
+
+    #header-text-img h2 {
+        font-size: 1.6rem;
+    }
+
+    #header-text-img2 h2 {
+        font-size: 1.5rem;
+    }
+
+    #header-text-img3 h2 {
+        font-size: 1.4rem;
+    }
 }
 
 /* FOR MOBILE (CASE IPHONE 11) */
@@ -467,9 +528,9 @@ body, html {
         width: 30%;
     }
 
-    #header-text-img h2 {
+    #header-text-img .head-text {
         font-size: 1.3rem;
-        width: 50%;
+        width: 48%;
     }
 
     #body-text h3 {
@@ -490,9 +551,9 @@ body, html {
         width: 30%;
     }
 
-    #header-text-img2 h2 {
-        width: 50%;
+    #header-text-img2 .head-text {
         font-size: 1.3rem;
+        width: 50%;
     }
 
     #body-text2 h3 {
@@ -513,9 +574,16 @@ body, html {
         width: 30%;
     }
 
-    #header-text-img3 h2 {
+    #header-text-img3 .head-text {
         width: 50%;
-        font-size: 1.3rem;
+    }
+
+    #header-text-img3 p {
+        font-size: 1rem;
+    }
+
+    #header-text-img3 h2 {
+        font-size: 1.2rem;
     }
 
     #body-text3 h3 {
@@ -539,44 +607,70 @@ body, html {
 }
 
 #text-newsletter h1 {
-    font-family: 'Open-Sans';
+    font-family: 'Open Sans';
     color: white;
     font-size: 3rem;
+    font-weight: bold;
 }
 
 #text-newsletter h3 {
-    font-family: 'Open-Sans';
-    color: white;
-    font-size: 2.5rem;
-}
-
-#text-newsletter p {
-    font-family: 'Open-Sans';
+    font-family: 'Open Sans';
     color: white;
     font-size: 1.5rem;
 }
 
+#text-newsletter p {
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 1.3rem;
+}
+
 #form-email .email {
-    font-family: 'Open-Sans';
+    font-family: 'Open Sans';
     color: white;
     font-size: 1.3rem;
 }
 
 #form-email input {
-    font-family: 'Open-Sans';
+    font-family: 'Open Sans';
     color: white;
     font-size: 1.3rem;
 }
 
 #form-email .btn-text {
-    font-family: 'Open-Sans';
+    font-family: 'Open Sans';
     color: black;
 }
 
 #form-email p {
-    font-family: 'Open-Sans';
+    font-family: 'Open Sans';
     color: white;
     font-size: 1.3rem;
+}
+
+#logo-color p {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+
+#logo-color svg {
+    color: rgb(209, 161, 3);
+}
+
+#logo-color svg {
+    animation: direction 1.4s infinite;
+}
+
+@keyframes direction {
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(1px);
+    }
 }
 
 #logo-color .fb {
@@ -596,7 +690,7 @@ body, html {
 }
 
 #text-footer p {
-    font-family: 'Open-Sans';
+    font-family: 'Open Sans';
 }
 
 #text-footer a:link {
@@ -626,9 +720,26 @@ body, html {
         font-size: 1rem;
     }
 
+    #logo-color {
+        margin-right: 3%;
+    }
+
+    #logo-color p {
+        font-size: 0.7rem;
+    }
+
+    #logo-color .bi-arrow-right {
+        width: 20%;
+    }
+
     #logo-color .col-sm-1 {
-        width: 12%;
-        padding-right: 50px;
+        width: 15%;
+        text-align: start;
+        padding-right: 11%;
+    }
+
+    #logo-color .col-sm-5 {
+        width: 40%;
     }
 
     #form-email .email {
