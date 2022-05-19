@@ -409,6 +409,8 @@ body, html {
     color: lightslategray;
     font-family: 'Open Sans';
     font-size: 1.2rem;
+    position: absolute;
+    top: 22%;
 }
 
 #header-text-img svg {
@@ -437,6 +439,8 @@ body, html {
     font-family: 'Open Sans';
     color: lightslategray;
     font-size: 1.2rem;
+    position: absolute;
+    top: 20%;
 }
 
 #header-text-img2 svg {
@@ -465,6 +469,8 @@ body, html {
     font-family: 'Open Sans';
     color: lightslategray;
     font-size: 1.2rem;
+    position: absolute;
+    top: 18%;
 }
 
 #header-text-img3 svg {
