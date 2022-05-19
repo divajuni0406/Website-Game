@@ -69,6 +69,7 @@ body, html {
     animation: hover 3s infinite;
 }
 
+/* Animation */
 @keyframes hover {
     0% {
         background-color: rgb(209, 161, 3);
@@ -110,6 +111,7 @@ body, html {
     animation-name: scroll-Down;
 }
 
+/* Animation */
 @keyframes scroll-Down {
     50% {
         transform: translateY(-20px);
@@ -124,6 +126,7 @@ body, html {
     }
 }
 
+/* MEDIA QUERRY */
 @media (min-width: 576px) and (max-width: 767px) {
 
     #main-text {
@@ -135,7 +138,7 @@ body, html {
     }
 }
 
-/* FOR MOBILE (CASE IPHONE 11) */
+/* MEDIA QUERRY UNDER 575px full manually because bootstrap responsive can handle maximum 576px(sm) only*/
 @media (max-width: 575px) {
     #main-text {
         font-size: 3.3rem;
@@ -175,7 +178,7 @@ body, html {
     font-size: 4rem;
 }
 
-/* FOR MOBILE (CASE IPHONE 11) */
+/* MEDIA QUERRY UNDER 576px full manually because bootstrap responsive can handle maximum 576px(sm) only*/
 @media (max-width: 565px) {
     #text-game-option {
         font-size: 1.5rem;
@@ -234,6 +237,7 @@ body, html {
     font-family: 'Open Sans';
 }
 
+/* MEDIA QUERRY */
 @media (min-width: 576px) and (max-width: 768px) {
     #text-size-feature {
         font-size: 1.4rem;
@@ -256,6 +260,7 @@ body, html {
     }
 }
 
+/* MEDIA QUERRY */
 @media (min-width: 769px) and (max-width: 991px) {
     #text-size-feature {
         font-size: 1.8rem;
@@ -278,8 +283,55 @@ body, html {
     }
 }
 
-/* FOR MOBILE (CASE IPHONE 11) */
-@media (max-width: 575px) {
+/* MEDIA QUERRY UNDER 575px full manually because bootstrap responsive can handle maximum 576px(sm) only*/
+@media (max-width: 575px) and (min-width: 391px) {
+    #game-feature {
+        background-image: url(assets/features.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        box-shadow: inset 0 0 100px 20px black;
+    }
+
+    #collumn-feature {
+        text-align: left;
+        padding-left: 52%;
+    }
+
+    #collumn-feature0 {
+        text-align: left;
+        padding-left: 52%;
+    }
+
+    #text-size-feature {
+        font-size: 1.2rem;
+    }
+
+    #text-size-feature1 {
+        font-size: 2.3rem;
+    }
+
+    #collumn-feature1 {
+        text-align: left;
+        padding-left: 52%;
+        font-size: 0.7rem;
+        padding-top: 5%;
+        padding-right: 5%;
+    }
+
+    #collumn-feature1 h2 {
+        font-size: 1.2rem;
+    }
+
+    #text-title-feature h2 {
+        font-family: 'Open Sans';
+        font-size: 1.2rem;
+    }
+}
+
+/* MEDIA QUERRY UNDER 390px full manually because bootstrap responsive can handle maximum 576px(sm) only*/
+@media (max-width: 390px) {
     #game-feature {
         background-image: url(assets/features.jpg);
         background-repeat: no-repeat;
@@ -354,7 +406,7 @@ body, html {
     color: white;
 }
 
-/* FOR MOBILE (CASE IPHONE 11) */
+/* MEDIA QUERRY */
 @media (max-width: 991px) {
     #SystemRequirement {
         background-image: url(assets/requirements.png);
@@ -376,7 +428,7 @@ body, html {
 
 /* System Requirement End Style  */
 
-/* Top Score  */
+/* TopScore */
 #TopScore {
     background-image: url(assets/top-score-bg.png);
     background-repeat: no-repeat;
@@ -388,21 +440,28 @@ body, html {
 
 #TextTopScore h1 {
     font-family: 'Open Sans';
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: white;
     font-weight: bold;
+    letter-spacing: 0.4rem;
 }
 
 #TextTopScore p {
     font-family: 'Open Sans';
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
 
+}
+
+#TextTopScore .btn {
+    width: 50%;
+    font-weight: bold;
 }
 
 #header-text-img h2 {
     color: rgb(209, 161, 3);
     font-family: 'Open Sans';
+    font-size: 1.6rem;
 }
 
 #header-text-img p {
@@ -410,7 +469,7 @@ body, html {
     font-family: 'Open Sans';
     font-size: 1.2rem;
     position: absolute;
-    top: 22%;
+    top: 18%;
 }
 
 #header-text-img svg {
@@ -431,7 +490,7 @@ body, html {
 
 #header-text-img2 h2 {
     font-family: 'Open Sans';
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     color: rgb(209, 161, 3);
 }
 
@@ -461,7 +520,7 @@ body, html {
 
 #header-text-img3 h2 {
     font-family: 'Open Sans';
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: rgb(209, 161, 3);
 }
 
@@ -489,34 +548,114 @@ body, html {
     font-size: 1rem;
 }
 
+/* MEDIA QUERRY */
 @media (min-width: 992px) and (max-width: 1199px) {
 
     #TextTopScore h1 {
-        font-size: 3rem;
+        font-size: 2.4rem;
     }
 
     #header-text-img h2 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     #header-text-img2 h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    #header-text-img2 p {
+        font-size: 1.1rem;
     }
 
     #header-text-img3 h2 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 }
 
-/* FOR MOBILE (CASE IPHONE 11) */
-@media (max-width: 575px) {
+/* MEDIA QUERRY */
+@media (min-width: 768px) and (max-width: 991px) {
 
     #TextTopScore h1 {
         font-size: 1.5rem;
     }
 
     #TextTopScore p {
+        font-size: 1rem;
+    }
+
+    #TextTopScore .btn {
+        font-size: 0.8rem;
+    }
+
+    #header-text-img h2 {
+        font-size: 1.4rem;
+    }
+
+    #header-text-img2 h2 {
         font-size: 1.3rem;
+    }
+
+    #header-text-img2 p {
+        font-size: 1.1rem;
+    }
+
+    #header-text-img3 h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* MEDIA QUERRY */
+@media (min-width: 576px) and (max-width: 767px) {
+
+    #TextTopScore h1 {
+        font-size: 2.5rem;
+        letter-spacing: 0rem;
+    }
+
+    #TextTopScore p {
+        font-size: 1rem;
+    }
+
+    #TextTopScore .btn {
+        font-size: 0.8rem;
+    }
+
+    #header-text-img h2 {
+        font-size: 1.8rem;
+    }
+
+    #header-text-img svg {
+        width: 15%;
+    }
+
+    #header-text-img2 h2 {
+        font-size: 1.8rem;
+    }
+
+    #header-text-img2 svg {
+        width: 15%;
+    }
+
+    #header-text-img3 h2 {
+        font-size: 1.8rem;
+    }
+
+    #header-text-img3 svg {
+        width: 15%;
+    }
+}
+
+/* MEDIA QUERRY between 364px - 575px full manually because bootstrap responsive can handle maximum 576px(sm) only */
+@media (max-width: 575px) and (min-width: 364px) {
+
+    #TextTopScore h1 {
+        font-size: 1.7rem;
+        letter-spacing: 0;
+    }
+
+    #TextTopScore p {
+        font-size: 1.2rem;
+        width: 90%;
     }
 
     #TextTopScore button {
@@ -526,7 +665,7 @@ body, html {
 
     /* CARD 1 */
     #header-text-img svg {
-        width: 20%;
+        width: 18%;
 
     }
 
@@ -549,7 +688,7 @@ body, html {
 
     /* CARD 2 */
     #header-text-img2 svg {
-        width: 20%;
+        width: 18%;
 
     }
 
@@ -572,7 +711,7 @@ body, html {
 
     /* CARD 3 */
     #header-text-img3 svg {
-        width: 20%;
+        width: 18%;
 
     }
 
@@ -600,6 +739,119 @@ body, html {
         font-size: 1rem;
     }
 }
+
+/* MEDIA QUERRY UNDER 363px full manually because bootstrap responsive can handle maximum 576px(sm) only */
+@media (max-width: 363px) {
+
+    #TextTopScore h1 {
+        font-size: 1.7rem;
+        letter-spacing: 0;
+    }
+
+    #TextTopScore p {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    #TextTopScore button {
+        width: 30%;
+        margin-bottom: 15px;
+    }
+
+    /* CARD 1 */
+    #header-text-img svg {
+        width: 18%;
+
+    }
+
+    #header-text-img img {
+        width: 30%;
+    }
+
+    #header-text-img .head-text {
+        width: 50%;
+    }
+
+    #header-text-img h2 {
+        font-size: 1.5rem;
+    }
+
+    #header-text-img p {
+        font-size: 1rem;
+    }
+
+    #body-text h3 {
+        font-size: 1.1rem;
+    }
+
+    #body-text p {
+        font-size: 1rem;
+    }
+
+    /* CARD 2 */
+    #header-text-img2 svg {
+        width: 18%;
+
+    }
+
+    #header-text-img2 img {
+        width: 30%;
+    }
+
+    #header-text-img2 .head-text {
+        width: 50%;
+    }
+
+    #header-text-img2 h2 {
+        font-size: 1.5rem;
+    }
+
+    #header-text-img2 p {
+        font-size: 1rem;
+    }
+
+    #body-text2 h3 {
+        font-size: 1.1rem;
+    }
+
+    #body-text2 p {
+        font-size: 1rem;
+    }
+
+    /* CARD 3 */
+    #header-text-img3 svg {
+        width: 18%;
+    }
+
+    #header-text-img3 img {
+        width: 30%;
+    }
+
+    #header-text-img3 .head-text {
+        width: 52%;
+    }
+
+    #header-text-img3 h2 {
+        font-size: 1.9rem;
+    }
+
+    #header-text-img3 p {
+        font-size: 1rem;
+    }
+
+    #header-text-img3 h2 {
+        font-size: 1.2rem;
+    }
+
+    #body-text3 h3 {
+        font-size: 1.1rem;
+    }
+
+    #body-text3 p {
+        font-size: 1rem;
+    }
+}
+
 
 /* Top Score End Style  */
 
@@ -669,6 +921,7 @@ body, html {
     animation: direction 1.4s infinite;
 }
 
+/* Animation */
 @keyframes direction {
     50% {
         transform: translateX(20px);
@@ -712,7 +965,7 @@ body, html {
     color: rgb(209, 161, 3);
 }
 
-/* FOR MOBILE (CASE IPHONE 11) */
+/* MEDIA QUERRY UNDER 575px full manually because bootstrap responsive can handle maximum 576px(sm) only */
 @media (max-width: 575px) {
     #text-newsletter h1 {
         font-size: 2rem;
@@ -802,6 +1055,7 @@ body, html {
     animation: hover1 2s infinite;
 }
 
+/* Animation */
 @keyframes hover1 {
     0% {
         color: darkkhaki;
