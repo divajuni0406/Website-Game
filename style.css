@@ -283,8 +283,8 @@ body, html {
     }
 }
 
-/* MEDIA QUERRY UNDER 575px full manually because bootstrap responsive can handle maximum 576px(sm) only*/
-@media (max-width: 575px) and (min-width: 391px) {
+/* MEDIA QUERRY between 575px to 500px full manually because bootstrap responsive can handle maximum 576px(sm) only*/
+@media (max-width: 575px) and (min-width: 500px) {
     #game-feature {
         background-image: url(assets/features.jpg);
         background-repeat: no-repeat;
@@ -330,8 +330,8 @@ body, html {
     }
 }
 
-/* MEDIA QUERRY UNDER 390px full manually because bootstrap responsive can handle maximum 576px(sm) only*/
-@media (max-width: 390px) {
+/* MEDIA QUERRY UNDER 500px full manually because bootstrap responsive can handle maximum 576px(sm) only*/
+@media (max-width: 499px) {
     #game-feature {
         background-image: url(assets/features.jpg);
         background-repeat: no-repeat;
