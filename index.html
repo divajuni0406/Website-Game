@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Traditional</title>
-    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="icon" href="assets/1652984168792.png" type="image/png">
     <!-- My CSS  -->
     <link rel="stylesheet" href="style.css">
     <!-- My Botstrap -->
@@ -26,8 +26,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-75 py-0">
                 <div class="container-fluid">
                     <a class="navbar-brand px-4" href="#">
-                        <img src="assets/logo.png" class="img-fluid" alt="Binar-Academy-Challenge" width="49"
-                            height="49">
+                        <img src="assets/1652984168792.png" class="img-fluid" alt="main-icon" width="55" height="55">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -189,6 +188,7 @@
             <div class="row justify-content-end pt-sm-5 ps-lg-4" id="collumn-feature1">
                 <div class="col-md-1 col-sm-2 text-end d-none d-sm-block">
                     <img class="img-fluid" src="assets/ellipse-orange.png" alt="ellipse-orange" width="30" height="30">
+                    <span class="line"></span>
                 </div>
                 <div class="col-md-5 me-md-3 me-lg-0 col-lg-5 col-sm-5 fw-bold text-light" id="text-title-feature">
                     <h2>TRADITIONAL GAMES</h2>
@@ -265,7 +265,7 @@
                         </tbody>
                     </table>
                 </div>
-                <button class="btn btn-warning">Run My Computer</button>
+                <button class="btn btn-warning" id="btn-check">Run My Computer</button>
             </div>
         </div>
     </section>
@@ -385,14 +385,14 @@
                             </p>
                         </div>
                         <div class="row" id="form-email">
-                            <div class="form col-sm-11 pt-md-5">
+                            <div class="form col-sm-11 col-md-12 pt-md-5">
                                 <label class="form-label email" for="email">Email:</label>
                                 <div class="input-group">
-                                    <input type="text" class="form-control bg-dark me-2"
-                                        placeholder="youremail@gmail.com">
-                                    <button class="btn btn-warning btn-text">Subscribe Now!</button>
+                                    <input type="text" class="form-control-lg bg-dark me-2"
+                                        placeholder="youremail@binar.co.id">
+                                    <button class="btn btn-warning btn-text px-md-5 rounded-1">Subscribe Now!</button>
                                 </div>
-                                <p>Input Your Email Adress !</p>
+                                <p>Input Your Email Address !</p>
                             </div>
                         </div>
                     </div>
@@ -400,15 +400,28 @@
             </div>
         </div>
         <div class="container">
-            <div class="row justify-content-md-end justify-content-sm-center text-md-end" id="logo-color">
-                <div class="col-sm-5">
-                    <p>FOLLOW US ON <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+            <div class="row justify-content-lg-end justify-content-md-center text-md-start text-lg-center"
+                id="logo-color">
+                <div class="col-lg-1 col-md-3 col-sm-2 mb-sm-4" id="BottomMenu1">
+                    <a href="#home">MAIN</a>
+                </div>
+                <div class="col-lg-1 col-md-3 col-sm-2 mb-sm-4" id="BottomMenu1">
+                    <a href="#footer">ABOUT</a>
+                </div>
+                <div class="col-lg-2 col-sm-3 mb-sm-4" id="BottomMenu">
+                    <a href="#game-feature">GAME FEATURES</a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 mb-sm-4" id="BottomMenu">
+                    <a href="#SystemRequirement">SYSTEM REQUIREMENTS</a>
+                </div>
+                <div class="col-lg-2 col-sm-4 FollowUs">
+                    <p>FOLLOW US<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                             class="bi bi-arrow-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
                                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                         </svg></p>
                 </div>
-                <div class="col-sm-1">
+                <div class="col-lg-1 col-sm-2 sosmed">
                     <a href="https://www.facebook.com/">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                             class="bi bi-facebook fb" viewBox="0 0 16 16">
@@ -417,7 +430,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="col-sm-1">
+                <div class="col-lg-1 col-sm-2 sosmed">
                     <a href="https://twitter.com/?lang=en">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                             class="bi bi-twitter twitter" viewBox="0 0 16 16">
@@ -426,7 +439,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="col-sm-1">
+                <div class="col-lg-1 col-sm-2 sosmed">
                     <a href="https://www.youtube.com/">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                             class="bi bi-youtube yt" viewBox="0 0 16 16">
@@ -435,7 +448,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="col-sm-1">
+                <div class="col-lg-1 col-sm-2 sosmed">
                     <a href="https://www.instagram.com/?hl=en">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                             class="bi bi-instagram ig" viewBox="0 0 16 16">
@@ -447,7 +460,7 @@
             </div>
             <hr>
             <div class="row" id="text-footer">
-                <div class="col-lg-6 col-md-12 col-sm-12 text-sm-center">
+                <div class="col-lg-6 col-sm-12 col-sm-12 text-sm-center">
                     <p>© 2018 Your Games, inc. All Rights Reserved</p>
                 </div>
                 <div class="col-lg-6 text-lg-end col-md-12 col-sm-12 text-sm-center pb-sm-2">
