@@ -5,23 +5,23 @@ body, html {
 /* Main Menu */
 #nav-text {
     font-family: 'Open Sans';
-    font-size: 14px;
+    font-size: 0.8rem;
 }
 
 #dropdown-hover:hover {
-    background-color: rgb(209, 161, 3);
+    background-color: orange;
 }
 
 #steam-color {
-    color: rgb(209, 161, 3);
+    color: orange;
 }
 
 #xbox-color {
-    color: rgb(209, 161, 3);
+    color: orange;
 }
 
 #hover-link:hover {
-    color: rgb(209, 161, 3);
+    color: orange;
 }
 
 #hover-link {
@@ -72,7 +72,7 @@ body, html {
 /* Animation */
 @keyframes hover {
     0% {
-        background-color: rgb(209, 161, 3);
+        background-color: orange;
     }
 
     25% {
@@ -88,7 +88,7 @@ body, html {
     }
 
     100% {
-        background-color: rgb(209, 161, 3);
+        background-color: orange;
     }
 }
 
@@ -99,7 +99,7 @@ body, html {
 }
 
 #text-story1:hover {
-    color: rgb(209, 161, 3);
+    color: orange;
 }
 
 #pt-story {
@@ -228,13 +228,22 @@ body, html {
 }
 
 #text-title-feature h2 {
-    color: rgb(209, 161, 3);
+    color: orange;
     font-family: 'Open Sans';
 }
 
 #text-title-feature {
-    color: rgb(209, 161, 3);
+    color: orange;
     font-family: 'Open Sans';
+}
+
+.line {
+    position: absolute;
+    background-color: white;
+    height: 6.2rem;
+    width: 0.2%;
+    transform: translateY(30%);
+    right: 44%;
 }
 
 /* MEDIA QUERRY */
@@ -257,6 +266,30 @@ body, html {
 
     #text-title-feature {
         font-size: 1.2rem;
+    }
+
+    .line {
+        height: 6rem;
+        right: 47.5%;
+        position: absolute;
+    }
+}
+
+/* MEDIA QUERRY */
+@media (min-width: 992px) and (max-width: 1030px) {
+    .line {
+        height: 6.2rem;
+        right: 43.5%;
+        transform: translateY(27%);
+    }
+}
+
+/* MEDIA QUERRY */
+@media (min-width: 1031px) and (max-width: 1199px) {
+    .line {
+        height: 6.3rem;
+        right: 44%;
+        transform: translateY(27%);
     }
 }
 
@@ -281,9 +314,15 @@ body, html {
     #text-title-feature {
         font-size: 1.2rem;
     }
+
+    .line {
+        height: 6.8rem;
+        right: 48%;
+        transform: translateY(27%);
+    }
 }
 
-/* MEDIA QUERRY between 575px to 500px full manually because bootstrap responsive can handle maximum 576px(sm) only*/
+/* MEDIA QUERRY between 500px to 575px full manually because bootstrap responsive can handle maximum 576px(sm) only*/
 @media (max-width: 575px) and (min-width: 500px) {
     #game-feature {
         background-image: url(assets/features.jpg);
@@ -399,11 +438,16 @@ body, html {
 }
 
 #TableText h1 {
-    color: rgb(209, 161, 3);
+    color: orange;
 }
 
 #TableText p {
     color: white;
+}
+
+#btn-check {
+    font-weight: bold;
+    font-family: 'Open Sans';
 }
 
 /* MEDIA QUERRY */
@@ -459,7 +503,7 @@ body, html {
 }
 
 #header-text-img h2 {
-    color: rgb(209, 161, 3);
+    color: orange;
     font-family: 'Open Sans';
     font-size: 1.6rem;
 }
@@ -473,7 +517,7 @@ body, html {
 }
 
 #header-text-img svg {
-    color: blue;
+    color: grey;
 }
 
 #body-text h3 {
@@ -491,7 +535,7 @@ body, html {
 #header-text-img2 h2 {
     font-family: 'Open Sans';
     font-size: 1.6rem;
-    color: rgb(209, 161, 3);
+    color: orange;
 }
 
 #header-text-img2 p {
@@ -503,7 +547,7 @@ body, html {
 }
 
 #header-text-img2 svg {
-    color: blue;
+    color: grey;
 }
 
 #body-text2 h3 {
@@ -521,7 +565,7 @@ body, html {
 #header-text-img3 h2 {
     font-family: 'Open Sans';
     font-size: 1.5rem;
-    color: rgb(209, 161, 3);
+    color: orange;
 }
 
 #header-text-img3 p {
@@ -533,7 +577,7 @@ body, html {
 }
 
 #header-text-img3 svg {
-    color: blue;
+    color: grey;
 }
 
 #body-text3 h3 {
@@ -898,23 +942,49 @@ body, html {
 #form-email .btn-text {
     font-family: 'Open Sans';
     color: black;
+    font-weight: bold;
 }
 
 #form-email p {
     font-family: 'Open Sans';
     color: white;
-    font-size: 1.3rem;
+    font-size: 1rem;
+}
+
+::placeholder {
+    color: orange;
 }
 
 #logo-color p {
     color: white;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: 'Open Sans';
-    font-weight: bold;
+}
+
+#BottomMenu a:hover {
+    color: orange;
+}
+
+#BottomMenu1 a:hover {
+    color: orange;
+}
+
+#BottomMenu a {
+    font-size: 0.7rem;
+    font-family: 'Open Sans';
+    text-decoration: none;
+    color: white;
+}
+
+#BottomMenu1 a {
+    font-size: 0.7rem;
+    font-family: 'Open Sans';
+    text-decoration: none;
+    color: white;
 }
 
 #logo-color svg {
-    color: rgb(209, 161, 3);
+    color: orange;
 }
 
 #logo-color svg {
@@ -936,16 +1006,32 @@ body, html {
     color: white;
 }
 
+#logo-color .fb:hover {
+    color: orange;
+}
+
 #logo-color .twitter {
     color: white;
+}
+
+#logo-color .twitter:hover {
+    color: orange;
 }
 
 #logo-color .yt {
     color: red;
 }
 
+#logo-color .yt:hover {
+    color: orange;
+}
+
 #logo-color .ig {
     color: white;
+}
+
+#logo-color .ig:hover {
+    color: orange;
 }
 
 #text-footer p {
@@ -959,10 +1045,11 @@ body, html {
 #text-footer a {
     color: white;
     font-family: 'Open Sans';
+    font-size: 0.8rem;
 }
 
 #text-footer a:hover {
-    color: rgb(209, 161, 3);
+    color: orange;
 }
 
 /* MEDIA QUERRY UNDER 575px full manually because bootstrap responsive can handle maximum 576px(sm) only */
@@ -987,18 +1074,38 @@ body, html {
         font-size: 0.7rem;
     }
 
+    #BottomMenu1 {
+        width: 13%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #BottomMenu {
+        width: 37%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #BottomMenu1 a {
+        font-size: 0.6rem;
+    }
+
+    #BottomMenu a {
+        font-size: 0.6rem;
+    }
+
     #logo-color .bi-arrow-right {
         width: 20%;
     }
 
-    #logo-color .col-sm-1 {
+    #logo-color .FollowUs {
+        width: 37%;
+    }
+
+    #logo-color .sosmed {
         width: 15%;
         text-align: start;
         padding-right: 11%;
-    }
-
-    #logo-color .col-sm-5 {
-        width: 40%;
     }
 
     #form-email .email {
@@ -1007,6 +1114,7 @@ body, html {
 
     #form-email input {
         font-size: 1.2rem;
+        margin-bottom: 10px;
     }
 
     #form-email p {
@@ -1048,7 +1156,7 @@ body, html {
 }
 
 .my-button:hover {
-    color: rgb(209, 161, 3);
+    color: orange;
 }
 
 .back-button {
