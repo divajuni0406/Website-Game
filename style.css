@@ -29,7 +29,7 @@ body, html {
 }
 
 #home {
-    background-image: url(assets/main-bg.jpg);
+    background-image: url(assets_website_landing_page/main-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -160,7 +160,7 @@ body, html {
 
 /* Gameplay Options */
 #gameplay-option {
-    background-image: url(assets/the-games-bg.jpg);
+    background-image: url(assets_website_landing_page/the-games-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -202,7 +202,7 @@ body, html {
 
 /* Game Feature */
 #game-feature {
-    background-image: url(assets/features.jpg);
+    background-image: url(assets_website_landing_page/features.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -325,7 +325,7 @@ body, html {
 /* MEDIA QUERRY between 500px to 575px full manually because bootstrap responsive can handle maximum 576px(sm) only*/
 @media (max-width: 575px) and (min-width: 500px) {
     #game-feature {
-        background-image: url(assets/features.jpg);
+        background-image: url(assets_website_landing_page/features.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -372,7 +372,7 @@ body, html {
 /* MEDIA QUERRY UNDER 500px full manually because bootstrap responsive can handle maximum 576px(sm) only*/
 @media (max-width: 499px) {
     #game-feature {
-        background-image: url(assets/features.jpg);
+        background-image: url(assets_website_landing_page/features.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 4% 50%;
@@ -415,7 +415,7 @@ body, html {
 
 /* System Requirement */
 #SystemRequirement {
-    background-image: url(assets/requirements.png);
+    background-image: url(assets_website_landing_page/requirements.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -453,7 +453,7 @@ body, html {
 /* MEDIA QUERRY */
 @media (max-width: 991px) {
     #SystemRequirement {
-        background-image: url(assets/requirements.png);
+        background-image: url(assets_website_landing_page/requirements.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 65% 50%;
@@ -474,7 +474,7 @@ body, html {
 
 /* TopScore */
 #TopScore {
-    background-image: url(assets/top-score-bg.png);
+    background-image: url(assets_website_landing_page/top-score-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
