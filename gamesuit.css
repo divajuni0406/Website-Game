@@ -1,0 +1,21 @@
+body {
+    background-color: #9C835F;
+    height: 100%;
+}
+.bi-arrow-left-circle-fill{
+    width: 50%;
+    color: #724C21;
+}
+.bi-arrow-left-circle-fill:hover{
+    width: 60%;
+    color: red;
+}
+.brand img{
+    width: 90%;
+}
+.tittle h1 {
+    font-family: 'Open Sans';
+    color: #F9B23D;
+    font-weight: 600;
+    font-size: 2rem;
+}
