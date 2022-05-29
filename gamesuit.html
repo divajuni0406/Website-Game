@@ -22,22 +22,22 @@
 
 <body>
     <!-- Navigation  -->
-    <section class="header pt-4">
+    <section class="header mt-sm-4 mb-sm-4 ms-sm-3">
         <header>
             <!-- back button, brand, and tittle  -->
             <div class="container-fluid">
-                <div class="row justify-content-start">
-                    <div class="col-md-1 text-center">
+                <div class="d-flex flex-row">
+                    <div class="backButton">
                         <a href="index.html"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                 class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
                                 <path
                                     d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
                             </svg> </a>
                     </div>
-                    <div class="col-md-1 text-center brand">
-                        <img src="assets_suit_game/batu.png" alt="" class="img-thumbnail rounded-3 img-fluid">
+                    <div class="brand">
+                        <img src="assets_suit_game/batu.png" alt="">
                     </div>
-                    <div class="col-md-5 tittle">
+                    <div class="tittle">
                         <h1>ROCK PAPER SCISSORS</h1>
                     </div>
                 </div>
@@ -46,8 +46,37 @@
     </section>
     <!-- Game  -->
     <section>
-        <div class="container">
-
+        <div class="container gameArea">
+            <div class="userArea">
+                <h1>Player 1</h1>
+                <div class="playerChoice ">
+                    <button class="btn mb-5">
+                        <img src="assets_suit_game/batu.png" alt="rock">
+                    </button>
+                    <button class="btn mb-5">
+                        <img src="assets_suit_game/kertas.png" alt="paper">
+                    </button>
+                    <button class="btn mb-5">
+                        <img src="assets_suit_game/gunting.png" alt="scissors">
+                    </button>
+                </div>
+            </div>
+            <div class="versusBox">
+                <div class="versus">
+                    <h1>VS</h1>
+                </div>
+                <div class="refresh">
+                    <button class="btn"><img src="assets_suit_game/refresh.png" alt="Refresh Button"></button>
+                </div>
+            </div>
+            <div class="computerArea">
+                <h1>Computer</h1>
+                <div class="comBrain ">
+                    <img src="assets_suit_game/batu.png" alt="rock">
+                    <img src="assets_suit_game/kertas.png" alt="paper">
+                    <img src="assets_suit_game/gunting.png" alt="scissors">
+                </div>
+            </div>
         </div>
     </section>
 </body>
