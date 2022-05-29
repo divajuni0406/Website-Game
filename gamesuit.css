@@ -2,20 +2,217 @@ body {
     background-color: #9C835F;
     height: 100%;
 }
-.bi-arrow-left-circle-fill{
-    width: 50%;
+
+/* Navigation Area  */
+.backButton {
+    width: 5%;
+}
+
+.bi-arrow-left-circle-fill {
+    width: 60%;
     color: #724C21;
 }
-.bi-arrow-left-circle-fill:hover{
-    width: 60%;
+
+.bi-arrow-left-circle-fill:hover {
+    width: 70%;
     color: red;
 }
-.brand img{
-    width: 90%;
+
+.brand img {
+    width: 80%;
 }
+
+.brand {
+    width: 6%;
+}
+
 .tittle h1 {
     font-family: 'Open Sans';
     color: #F9B23D;
     font-weight: 600;
     font-size: 2rem;
 }
+
+/* Navigation Area End Tag  */
+
+/* Game Area Section  */
+.gameArea {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.playerChoice {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.playerChoice img {
+    width: 50%;
+}
+
+.playerChoice button {
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-radius: 20px;
+}
+
+.playerChoice button:hover {
+    background-color: blanchedalmond;
+    animation: pulse 1.4s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.comBrain {
+    display: flex;
+    flex-direction: column;
+}
+
+.comBrain img {
+    width: 28%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 22%;
+    margin-top: 14%;
+}
+
+.versusBox {
+    width: 600%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.versus h1 {
+    font-size: 6rem;
+    font-family: 'Open Sans';
+    padding: 10% 10%;
+    color: red;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.refresh img {
+    width: 6%;
+    position: absolute;
+    top: 130%;
+    transform: translateX(-50%);
+    padding-bottom: 5%;
+}
+
+.refresh button {
+    border-radius: 30px;
+}
+
+/* Game Area Section End Tag  */
+
+/* Media Querry Nav Area  */
+@media (max-width: 499px) {
+    .header {
+        margin-top: 8%;
+        margin-bottom: 15%;
+    }
+
+    .backButton {
+        width: 10%;
+    }
+
+    .bi-arrow-left-circle-fill {
+        width: 70%;
+    }
+
+    .bi-arrow-left-circle-fill:hover {
+        width: 80%;
+    }
+
+    .brand img {
+        width: 100%;
+    }
+
+    .brand {
+        width: 15%;
+        padding-right: 4%;
+    }
+
+    .tittle h1 {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 500px) {
+    .backButton {
+        width: 8%;
+    }
+
+    .brand {
+        width: 8%;
+    }
+
+    .tittle h1 {
+        font-size: 1.5rem;
+    }
+
+    .header {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+/* Media Querry Nav End Tag  */
+
+/* Media Querry Game Area Section  */
+@media (max-width: 499px) {
+    .playerChoice img {
+        width: 100%;
+    }
+
+    .comBrain img {
+        width: 40%;
+        margin-bottom: 48%;
+    }
+
+    .refresh img {
+        width: 10%;
+        top: 75%;
+    }
+}
+
+@media (max-width: 990px) and (min-width: 768px) {
+    .comBrain img {
+        width: 25%;
+        margin-bottom: 29%;
+    }
+
+    .refresh img {
+        top: 110%;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 500px) {
+    .comBrain img {
+        margin-bottom: 36%;
+    }
+
+    .refresh img {
+        top: 80%;
+    }
+}
+
+/* Media Querry Game Area Section End Tag  */
