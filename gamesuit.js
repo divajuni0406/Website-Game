@@ -26,13 +26,22 @@ function removeClassActiveUser() {
 }
 
 function buttonDisabled() {
-  const p = document.getElementById("user");
-  p.classList.add("cursor");
+  const user = document.getElementById("user");
+  user.classList.add("cursor");
+}
+
+function resetButtonDisabled() {
+  const user = document.querySelector(".refresh button");
+  user.classList.add("cursor");
+}
+
+function resetButtonDisabled1() {
+  const user = document.querySelector(".refresh button");
+  user.classList.remove("cursor");
 }
 
 function random() {
   let botBrain1 = ["gunting", "batu", "kertas"];
-
   let i = 0;
   let countArray = botBrain1.length - 1;
   let startDateTime = new Date().getTime();
@@ -65,10 +74,15 @@ function resetButton() {
 function pick(humanOption) {
   random();
   buttonDisabled();
+  resetButtonDisabled();
   let humanOptionElement = document.getElementById(humanOption + "-p");
   humanOptionElement.classList.add("activeUser");
+  let textElement = document.getElementById("textVS");
+  textElement.innerHTML = "Loading...";
+  textElement.classList.add("active-text-win");
   setTimeout(function () {
     removeClassActive();
+    resetButtonDisabled1();
     const botOption = bot();
     let botOptionElement = document.getElementById(botOption);
     botOptionElement.classList.add("active");
