@@ -1,0 +1,428 @@
+body {
+    background-color: #9C835F;
+    min-height: 100vh;
+}
+
+/* DOM MANIPULATION */
+
+.cursor {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.active {
+    background-color: blanchedalmond;
+}
+
+.versusBox .versus .active-text-win {
+    color: white;
+    background-color: green;
+    font-size: 300%;
+    font-family: 'Open Sans';
+}
+
+.activeUser {
+    background-color: blanchedalmond;
+    animation-play-state: paused;
+}
+/* DOM End Tag */
+
+/* Navigation Area  */
+.backButton {
+    width: 5%;
+}
+
+.bi-arrow-left-circle-fill {
+    width: 60%;
+    color: #724C21;
+}
+
+.bi-arrow-left-circle-fill:hover {
+    width: 70%;
+    color: blanchedalmond;
+}
+
+.brand img {
+    width: 80%;
+}
+
+.brand {
+    width: 6%;
+}
+
+.tittle h1 {
+    font-family: 'Open Sans';
+    color: #F9B23D;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+/* Navigation Area End Tag  */
+
+/* Game Area Section  */
+.gameArea {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.playerChoice {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.playerChoice img {
+    width: 40%;
+}
+
+.playerChoice button {
+    margin-top: 0%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 20px;
+}
+
+.playerChoice button:hover {
+    background-color: blanchedalmond;
+    animation: pulse 1.4s infinite;
+}
+
+.playerChoice button:focus {
+    background-color: blanchedalmond;
+    animation-play-state: paused;
+    box-shadow: none;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.comBrain {
+    display: flex;
+    flex-direction: column;
+}
+
+.comBrain button {
+    margin-top: 0%;
+    margin-bottom: 12%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 20px;
+}
+
+.comBrain button:focus {
+    box-shadow: none;
+}
+
+.comBrain button:hover {
+    cursor: default;
+}
+
+.comBrain img {
+    width: 40%;
+}
+
+.versusBox {
+    width: 600%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.versus h1 {
+    font-size: 6rem;
+    font-family: 'Open Sans';
+    padding: 10% 10%;
+    color: red;
+    font-weight: bold;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.refresh img {
+    width: 40%;
+}
+
+.refresh {
+    position: absolute;
+    top: 570px;
+    transform: translateX(60px);
+    width: 15%;
+}
+
+.refresh button:hover {
+    animation: spin 1s infinite;
+}
+
+.refresh button:focus {
+    animation-play-state: paused;
+    box-shadow: none;
+}
+
+
+@keyframes spin {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/* Game Area Section End Tag  */
+
+/* Media Querry Nav Area  */
+@media (max-width: 499px) {
+    .header {
+        margin-top: 8%;
+        margin-bottom: 15%;
+    }
+
+    .backButton {
+        width: 10%;
+    }
+
+    .bi-arrow-left-circle-fill {
+        width: 70%;
+    }
+
+    .bi-arrow-left-circle-fill:hover {
+        width: 80%;
+    }
+
+    .brand img {
+        width: 100%;
+    }
+
+    .brand {
+        width: 15%;
+        padding-right: 4%;
+    }
+
+    .tittle h1 {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 500px) {
+    .backButton {
+        width: 8%;
+    }
+
+    .brand {
+        width: 8%;
+    }
+
+    .tittle h1 {
+        font-size: 1.5rem;
+    }
+
+    .header {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+/* Media Querry Nav End Tag  */
+
+/* Media Querry Game Area Section  */
+@media (max-width: 399px) {
+
+    .versusBox {
+        width: 2400%;
+    }
+
+    .versusBox .versus .active-text-win {
+        font-size: 150%;
+    }
+
+    .playerChoice img {
+        width: 190%;
+    }
+
+    .playerChoice button {
+        margin-top: 15%;
+        margin-right: 9%;
+        padding-right: 30%;
+    }
+
+    .comBrain button {
+        margin-bottom: 36%;
+        margin-top: 15%;
+        margin-left: 7%;
+        padding-right: 28%;
+    }
+
+    .comBrain img {
+        width: 150%;
+    }
+
+    .versus h1 {
+        font-size: 4rem;
+        padding: 10% 10%;
+    }
+
+    .refresh img {
+        width: 120%;
+    }
+
+    .refresh {
+        top: 550px;
+        transform: translateX(30px);
+    }
+}
+
+@media (max-width: 990px) and (min-width: 768px) {
+    .versusBox {
+        width: 1000%;
+    }
+
+    .versusBox .versus .active-text-win {
+        font-size: 230%;
+    }
+
+    .playerChoice img {
+        width: 60%;
+    }
+
+    .comBrain img {
+        width: 66%;
+    }
+
+    .comBrain button {
+        margin-bottom: 14%;
+    }
+
+    .refresh img {
+        width: 50%;
+    }
+
+    .refresh {
+        top: 480px;
+        transform: translateX(40px);
+    }
+}
+
+@media (max-width: 767px) and (min-width: 700px) {
+    .versusBox {
+        width: 1000%;
+    }
+
+    .versusBox .versus .active-text-win {
+        font-size: 150%;
+    }
+
+    .playerChoice img {
+        width: 80%;
+    }
+
+    .playerChoice button {
+        margin-bottom: 18%;
+        margin-top: 5%;
+    }
+
+    .comBrain img {
+        width: 82%;
+    }
+
+    .comBrain button {
+        margin-bottom: 22%;
+        margin-top: 5%;
+    }
+
+    .versus h1 {
+        font-size: 4rem;
+    }
+
+    .refresh {
+        top: 530px;
+        transform: translateX(8px);
+    }
+}
+
+@media (max-width: 699px) and (min-width: 500px) {
+    .versusBox {
+        width: 1000%;
+    }
+
+    .versusBox .versus .active-text-win {
+        font-size: 150%;
+    }
+
+    .playerChoice img {
+        width: 85%;
+    }
+
+    .comBrain img {
+        width: 87%;
+    }
+
+    .comBrain button {
+        margin-bottom: 22%;
+    }
+
+    .versus h1 {
+        font-size: 4rem;
+    }
+
+    .refresh {
+        top: 480px;
+        transform: translateX(15px);
+
+    }
+
+    .refresh img {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 499px) and (min-width: 400px) {
+    .versusBox {
+        width: 1800%;
+    }
+
+    .versusBox .versus .active-text-win {
+        font-size: 150%;
+    }
+
+    .comBrain button {
+        margin-bottom: 38%;
+    }
+
+    .playerChoice img {
+        width: 105%;
+    }
+
+    .comBrain img {
+        width: 100%;
+    }
+
+    .versus h1 {
+        font-size: 4rem;
+    }
+
+    .refresh {
+        top: 470px;
+        transform: translateX(35px);
+
+    }
+
+    .refresh img {
+        width: 100%;
+    }
+
+}
+
+/* Media Querry Game Area Section End Tag  */
