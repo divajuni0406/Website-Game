@@ -6,12 +6,13 @@ class GameStart {
     this.botPick;
     this.humanPick;
   }
+  // Bot Pick 
   bot() {
     let botBrain = ["scissors", "rock", "paper"];
     let botPick = botBrain[Math.floor(Math.random() * botBrain.length)];
     return (this.botPick = botPick);
   }
-
+// Winner Calculation 
   winner(human, bot) {
     if (human == bot) return "DRAW";
     if (human == "scissors") return bot == "rock" ? this.botWin : this.humanWin;
@@ -19,7 +20,7 @@ class GameStart {
     if (human == "paper") return bot == "scissors" ? this.botWin : this.humanWin;
   }
 }
-
+// Remove Computer Active Function  
 class ButtonFunction {
   removeClassActive() {
     const classBotOption = document.querySelectorAll(".comBrain button");
@@ -27,29 +28,29 @@ class ButtonFunction {
       value.classList.remove("active");
     });
   }
-
+// Remove User Active Function  
   removeClassActiveUser() {
     const classBotOption = document.querySelectorAll(".playerChoice button");
     classBotOption.forEach((value) => {
       value.classList.remove("activeUser");
     });
   }
-
+  // Disable Button User 
   buttonDisabled() {
     const user = document.getElementById("user");
     user.classList.add("cursor");
   }
-
+  // Disable Reset Button 
   resetButtonDisabled() {
     const user = document.querySelector(".refresh button");
     user.classList.add("cursor");
   }
-
+  // Remove Disable Reset Button
   resetButtonDisabled1() {
     const user = document.querySelector(".refresh button");
     user.classList.remove("cursor");
   }
-
+  // Reset Button Function 
   resetButton() {
     let textElement = document.getElementById("textVS");
     textElement.innerHTML = "VS";
@@ -60,7 +61,7 @@ class ButtonFunction {
   }
 }
 // Object Oriented Programming End Tag
-
+// Random Pick Manipulation Computer 
 const randomManipulation = () => {
   const random = new ButtonFunction();
   let botBrain = ["rock", "scissors", "paper"];
@@ -82,14 +83,14 @@ const randomManipulation = () => {
     i++;
   }, 100);
 };
-
+// Reset Button 
 function resetButton() {
   const reset = new ButtonFunction();
   reset.removeClassActive();
   reset.removeClassActiveUser();
   reset.resetButton();
 }
-
+// Human Option Function 
 function pick(humanOption) {
   const start = new GameStart();
   const button = new ButtonFunction();
@@ -111,8 +112,8 @@ function pick(humanOption) {
     let textElement = document.getElementById("textVS");
     textElement.innerHTML = finalResult;
     textElement.classList.add("active-text-win1");
-    console.log("human pick : " + humanOption);
-    console.log("bot pick : " + botOption);
-    console.log("hasil akhir : " + finalResult);
+    // console.log("human pick : " + humanOption);
+    // console.log("bot pick : " + botOption);
+    // console.log("hasil akhir : " + finalResult);
   }, 3000);
 }
