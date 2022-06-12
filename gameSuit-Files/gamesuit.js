@@ -7,7 +7,7 @@ class GameStart {
     this.humanPick;
   }
   // Com Pick 
-  comOptions() {
+  comOption() {
     let comBrain = ["scissors", "rock", "paper"];
     let comPick = comBrain[Math.floor(Math.random() * comBrain.length)];
     return (this.comPick = comPick);
@@ -105,7 +105,7 @@ function pick(playerOption) {
   setTimeout(function () {
     button.removeClassActive();
     button.resetButtonDisabled1();
-    const comOption = start.comOptions();
+    const comOption = start.comOption();
     let comOptionsElement = document.getElementById(comOption);
     comOptionsElement.classList.add("active");
     const finalResult = start.winner(playerOption, comOption);
