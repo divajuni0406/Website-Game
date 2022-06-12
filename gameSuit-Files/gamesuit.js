@@ -1,23 +1,23 @@
 // Object Oriented Programming
 class GameStart {
   constructor() {
-    this.botWin = "COM WIN";
-    this.humanWin = "PLAYER1 WIN";
-    this.botPick;
+    this.comWin = "COM WIN";
+    this.playerWin = "PLAYER1 WIN";
+    this.comPick;
     this.humanPick;
   }
-  // Bot Pick 
-  bot() {
-    let botBrain = ["scissors", "rock", "paper"];
-    let botPick = botBrain[Math.floor(Math.random() * botBrain.length)];
-    return (this.botPick = botPick);
+  // Com Pick 
+  comOptions() {
+    let comBrain = ["scissors", "rock", "paper"];
+    let comPick = comBrain[Math.floor(Math.random() * comBrain.length)];
+    return (this.comPick = comPick);
   }
 // Winner Calculation 
-  winner(human, bot) {
-    if (human == bot) return "DRAW";
-    if (human == "scissors") return bot == "rock" ? this.botWin : this.humanWin;
-    if (human == "rock") return bot == "paper" ? this.botWin : this.humanWin;
-    if (human == "paper") return bot == "scissors" ? this.botWin : this.humanWin;
+  winner(player, com) {
+    if (player == com) return "DRAW";
+    if (player == "scissors") return com == "rock" ? this.comWin : this.playerWin;
+    if (player == "rock") return com == "paper" ? this.comWin : this.playerWin;
+    if (player == "paper") return com == "scissors" ? this.comWin : this.playerWin;
   }
 }
 // Remove Computer Active Function  
@@ -37,18 +37,18 @@ class ButtonFunction {
   }
   // Disable Button User 
   buttonDisabled() {
-    const user = document.getElementById("user");
-    user.classList.add("cursor");
+    const player = document.querySelector(".player");
+    player.classList.add("cursor");
   }
   // Disable Reset Button 
   resetButtonDisabled() {
-    const user = document.querySelector(".refresh button");
-    user.classList.add("cursor");
+    const player = document.querySelector(".refresh button");
+    player.classList.add("cursor");
   }
   // Remove Disable Reset Button
   resetButtonDisabled1() {
-    const user = document.querySelector(".refresh button");
-    user.classList.remove("cursor");
+    const player = document.querySelector(".refresh button");
+    player.classList.remove("cursor");
   }
   // Reset Button Function 
   resetButton() {
@@ -56,7 +56,7 @@ class ButtonFunction {
     textElement.innerHTML = "VS";
     textElement.classList.remove("active-text-win");
     textElement.classList.remove("active-text-win1");
-    const cursor = document.getElementById("user");
+    const cursor = document.querySelector(".player");
     cursor.classList.remove("cursor");
   }
 }
@@ -64,9 +64,9 @@ class ButtonFunction {
 // Random Pick Manipulation Computer 
 const randomManipulation = () => {
   const random = new ButtonFunction();
-  let botBrain = ["rock", "scissors", "paper"];
+  let comBrain = ["rock", "scissors", "paper"];
   let i = 0;
-  let countArray = botBrain.length;
+  let countArray = comBrain.length;
   let startDateTime = new Date().getTime();
   setInterval(() => {
     if (new Date().getTime() - startDateTime > 3000) {
@@ -78,7 +78,7 @@ const randomManipulation = () => {
       i = 0;
     }
 
-    let element = document.getElementById(botBrain[i]);
+    let element = document.getElementById(comBrain[i]);
     element.classList.add("active");
     i++;
   }, 100);
@@ -91,29 +91,29 @@ function resetButton() {
   reset.resetButton();
 }
 // Human Option Function 
-function pick(humanOption) {
+function pick(playerOption) {
   const start = new GameStart();
   const button = new ButtonFunction();
   randomManipulation();
   button.buttonDisabled();
   button.resetButtonDisabled();
-  let humanOptionElement = document.getElementById(humanOption + "-p");
-  humanOptionElement.classList.add("activeUser");
+  let playerOptionElement = document.getElementById(playerOption + "-p");
+  playerOptionElement.classList.add("activeUser");
   let textElement = document.getElementById("textVS");
   textElement.innerHTML = "Loading...";
   textElement.classList.add("active-text-win");
   setTimeout(function () {
     button.removeClassActive();
     button.resetButtonDisabled1();
-    const botOption = start.bot();
-    let botOptionElement = document.getElementById(botOption);
-    botOptionElement.classList.add("active");
-    const finalResult = start.winner(humanOption, botOption);
+    const comOption = start.comOptions();
+    let comOptionsElement = document.getElementById(comOption);
+    comOptionsElement.classList.add("active");
+    const finalResult = start.winner(playerOption, comOption);
     let textElement = document.getElementById("textVS");
     textElement.innerHTML = finalResult;
     textElement.classList.add("active-text-win1");
-    // console.log("human pick : " + humanOption);
-    // console.log("bot pick : " + botOption);
+    // console.log("player pick : " + playerOption);
+    // console.log("com pick : " + comOption);
     // console.log("hasil akhir : " + finalResult);
   }, 3000);
 }
