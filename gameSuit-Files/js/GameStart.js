@@ -8,9 +8,14 @@ class GameStart {
   }
   // Com Pick
   comOption() {
-    let comBrain = ["scissors", "rock", "paper"];
+    const comBrain = ["scissors", "rock", "paper"];
     let comPick = comBrain[Math.floor(Math.random() * comBrain.length)];
     return (this.comPick = comPick);
+  }
+
+  // Player Pick
+  playerOption(params) {
+    this.playerPick = params;
   }
 
   // Winner Calculation
