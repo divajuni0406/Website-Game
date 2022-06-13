@@ -1,6 +1,8 @@
+// Import files
 import { GameStart } from "./GameStart.js";
 import { Action } from "./Action.js";
 
+// Call function
 const action = new Action();
 const gameStart = new GameStart();
 
@@ -26,8 +28,9 @@ const randomManipulation = () => {
   }, 100);
 };
 
-// Human Option Function
+// Human Option and Main Function
 function pick(playerOption) {
+  gameStart.playerOption(playerOption);
   randomManipulation();
   action.buttonDisabled();
   action.resetButtonDisabled();
@@ -49,6 +52,7 @@ function pick(playerOption) {
   }, 3000);
 }
 
+// Add Onclick of PlayerChoice
 const playerOption = document.querySelectorAll(".playerChoice button");
 playerOption.forEach((value) => {
   document.querySelector("." + value.classList[2]).onclick = () => {
@@ -56,7 +60,9 @@ playerOption.forEach((value) => {
   };
 });
 
-document.querySelector(".reset-button").onclick = () => {
+// Reset Button Function
+const resetButton = document.querySelector(".reset-button");
+resetButton.onclick = () => {
   action.removeClassActive();
   action.removeClassActiveUser();
   action.resetButton();
