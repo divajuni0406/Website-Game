@@ -39,7 +39,7 @@ body {
     }
 }
 
-.activeUser {
+.activePlayer {
     background-color: blanchedalmond;
     animation-play-state: paused;
 }
